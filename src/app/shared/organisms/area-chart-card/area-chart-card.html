@@ -1,0 +1,59 @@
+<div class="card">
+    <div class="chart-container">
+        <!-- SVG mock for Area Chart -->
+        <svg viewBox="0 0 500 200" preserveAspectRatio="none" class="chart-svg">
+            <!-- Grid lines -->
+            <line x1="0" y1="20" x2="500" y2="20" class="grid-line" />
+            <line x1="0" y1="60" x2="500" y2="60" class="grid-line" />
+            <line x1="0" y1="100" x2="500" y2="100" class="grid-line" />
+            <line x1="0" y1="140" x2="500" y2="140" class="grid-line" />
+            <line x1="0" y1="180" x2="500" y2="180" class="grid-line" />
+
+            <!-- Y-Axis labels -->
+            <text x="10" y="24" class="axis-label">10</text>
+            <text x="10" y="64" class="axis-label">20</text>
+            <text x="10" y="104" class="axis-label">30</text>
+            <text x="10" y="144" class="axis-label">50</text>
+            <text x="10" y="184" class="axis-label">70</text>
+
+            <!-- Gradient Definitions -->
+            <defs>
+                <linearGradient id="areaGradPink" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="var(--accent-pink)" stop-opacity="0.3"></stop>
+                    <stop offset="100%" stop-color="var(--accent-pink)" stop-opacity="0"></stop>
+                </linearGradient>
+                <linearGradient id="areaGradPurple" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="var(--accent-purple)" stop-opacity="0.3"></stop>
+                    <stop offset="100%" stop-color="var(--accent-purple)" stop-opacity="0"></stop>
+                </linearGradient>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="var(--accent-yellow)"></stop>
+                    <stop offset="50%" stop-color="var(--accent-pink)"></stop>
+                    <stop offset="100%" stop-color="var(--accent-purple)"></stop>
+                </linearGradient>
+            </defs>
+
+            <!-- Areas -->
+            <path d="M 50 180 Q 150 100 250 80 T 500 150 L 500 200 L 50 200 Z" class="area-path"
+                style="fill:url(#areaGradPurple)" />
+
+            <!-- Main Line -->
+            <path d="M 50 180 Q 150 100 250 80 T 500 150" class="line-path" fill="none"
+                style="stroke:url(#lineGrad); stroke-width: 2;" />
+
+            <!-- Data Points -->
+            <circle cx="110" cy="140" r="3" class="data-point" />
+            <text x="110" y="130" class="point-label">Data 01</text>
+            <line x1="110" y1="140" x2="110" y2="200" class="v-line" />
+
+            <circle cx="230" cy="84" r="3" class="data-point" />
+            <text x="230" y="74" class="point-label">Data 02</text>
+            <line x1="230" y1="84" x2="230" y2="200" class="v-line" />
+
+            <circle cx="350" cy="115" r="3" class="data-point" />
+            <text x="350" y="105" class="point-label">Data 03</text>
+            <line x1="350" y1="115" x2="350" y2="200" class="v-line" />
+
+        </svg>
+    </div>
+</div>

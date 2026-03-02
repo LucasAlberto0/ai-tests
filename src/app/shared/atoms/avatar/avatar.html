@@ -1,0 +1,5 @@
+<img *ngIf="src; else initialsTpl" [src]="src" [alt]="alt" [style.width]="size" [style.height]="size"
+    class="avatar-img" />
+<ng-template #initialsTpl>
+    <div class="avatar-initials" [style.width]="size" [style.height]="size">{{ initials }}</div>
+</ng-template>

@@ -1,0 +1,13 @@
+<div class="stat-card">
+    <div class="header">
+        <app-circular-progress [progress]="progress" [color]="color" size="70px" [showText]="false">
+            <app-typography variant="h2">{{ value }}</app-typography>
+        </app-circular-progress>
+    </div>
+    <div class="body">
+        <app-typography variant="h3" color="{{color}}" class="mb-5">{{ title }}</app-typography>
+        <app-typography variant="caption" class="lorem-text">
+            {{ subtitle }}
+        </app-typography>
+    </div>
+</div>

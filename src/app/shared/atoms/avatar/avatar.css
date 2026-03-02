@@ -1,0 +1,17 @@
+.avatar-img {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.avatar-initials {
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: 2px solid var(--accent-green);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}

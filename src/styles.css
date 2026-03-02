@@ -1,3 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /* Background gradients */
+    --bg-primary: #1b002c;
+    /* Main body bg */
+    --bg-secondary: #11001c;
+    /* gradient darker end */
 
-@import "tailwindcss";
+    /* Organism backgrounds */
+    --sidebar-bg: #0f011a;
+    --card-bg: #1d0532;
+
+    /* Accent colors */
+    --accent-cyan: #00e5ff;
+    --accent-pink: #ff007f;
+    --accent-green: #00ff7f;
+    --accent-yellow: #ffaa00;
+    --accent-purple: #7f00ff;
+
+    /* Text colors */
+    --text-primary: #ffffff;
+    --text-secondary: #a89bb8;
+    --text-muted: #6e6180;
+
+    /* Spacing */
+    --spacing-base: 8px;
+
+    /* Fonts */
+    --font-main: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+    color: var(--text-primary);
+    min-height: 100vh;
+}

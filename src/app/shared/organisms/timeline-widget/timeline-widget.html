@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="timeline-container">
+        <!-- Connecting Line -->
+        <div class="timeline-line"></div>
+
+        <div class="timeline-items">
+            <div class="timeline-item" *ngFor="let item of timelineData; let i = index">
+                <app-circular-progress [progress]="item.progress" [color]="item.color" size="60px" [showText]="true">
+                </app-circular-progress>
+                <div class="timeline-dot"></div>
+                <app-typography variant="caption" class="data-text">Data text</app-typography>
+            </div>
+        </div>
+    </div>
+</div>

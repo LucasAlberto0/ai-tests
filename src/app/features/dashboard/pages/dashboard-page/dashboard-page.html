@@ -1,0 +1,63 @@
+<app-dashboard-layout>
+    <div class="header-section">
+        <app-typography variant="caption" color="var(--text-secondary)">DASHBOARD / HOME</app-typography>
+    </div>
+
+    <div class="dashboard-grid">
+
+        <!-- Row 1: Stat cards -->
+        <div class="row r1">
+            <app-stat-card title="DATA TEXT" value="1,544" [progress]="65" color="var(--accent-cyan)"></app-stat-card>
+            <app-stat-card title="DATA TEXT" value="2,487" [progress]="40" color="var(--accent-pink)"></app-stat-card>
+            <app-stat-card title="DATA TEXT" value="1,544" [progress]="80" color="var(--accent-green)"></app-stat-card>
+
+            <div class="card text-stat-card border-card">
+                <app-typography variant="h3" color="var(--accent-yellow)">LOREM IPSUM</app-typography>
+                <app-typography variant="caption" class="block mt-5 mb-10">Consectetuer adipiscing</app-typography>
+                <app-typography variant="h1" color="var(--accent-cyan)">64%</app-typography>
+                <app-typography variant="caption" class="block mt-10">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.
+                </app-typography>
+            </div>
+
+            <div class="card linear-stat-card">
+                <app-typography variant="h3" color="var(--accent-pink)">LOREM IPSUM</app-typography>
+                <app-typography variant="caption" class="block mt-5 mb-10">Consectetuer adipiscing</app-typography>
+                <div class="progress-list">
+                    <div class="progress-item mb-5">
+                        <app-typography variant="caption" color="var(--accent-purple)">Lorem ipsum dolor sit
+                            amet</app-typography>
+                        <app-progress-bar [progress]="60" color="linear-gradient(90deg, #ff007f, #00e5ff)"
+                            height="8px"></app-progress-bar>
+                    </div>
+                    <div class="progress-item mb-5">
+                        <app-typography variant="caption" color="var(--accent-purple)">Lorem ipsum dolor sit
+                            amet</app-typography>
+                        <app-progress-bar [progress]="80" color="linear-gradient(90deg, #7f00ff, #00ff7f)"
+                            height="8px"></app-progress-bar>
+                    </div>
+                    <div class="progress-item mb-5">
+                        <app-typography variant="caption" color="var(--accent-purple)">Lorem ipsum</app-typography>
+                        <app-progress-bar [progress]="40" color="linear-gradient(90deg, #ffaa00, #00ff7f)"
+                            height="8px"></app-progress-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: Charts -->
+        <div class="row r2">
+            <app-area-chart-card class="area-chart"></app-area-chart-card>
+            <app-bar-chart-card class="bar-chart"></app-bar-chart-card>
+        </div>
+
+        <!-- Row 3: Widgets -->
+        <div class="row r3">
+            <app-activities-widget class="activities"></app-activities-widget>
+            <app-calendar-widget class="calendar"></app-calendar-widget>
+            <app-timeline-widget class="timeline"></app-timeline-widget>
+        </div>
+
+    </div>
+</app-dashboard-layout>

@@ -1,0 +1,66 @@
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+}
+
+.calendar-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.nav-arrow {
+    cursor: pointer;
+    color: var(--accent-yellow);
+}
+
+.nav-arrow.left {
+    transform: rotate(90deg);
+}
+
+.nav-arrow.right {
+    transform: rotate(-90deg);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    flex: 1;
+}
+
+.day-name {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.day {
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    height: 24px;
+    border-radius: 4px;
+}
+
+.day.orange {
+    color: var(--accent-yellow);
+}
+
+.day.active {
+    background-color: var(--accent-cyan);
+    color: var(--bg-primary);
+    font-weight: 600;
+}

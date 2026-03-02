@@ -1,0 +1,101 @@
+.header-section {
+    margin-bottom: 24px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.r1 {
+    min-height: 250px;
+}
+
+.r1>* {
+    flex: 1 1 200px;
+}
+
+.r1 app-stat-card {
+    flex: 1 1 200px;
+}
+
+.text-stat-card {
+    flex: 1.5 1 280px;
+}
+
+.linear-stat-card {
+    flex: 1.5 1 280px;
+}
+
+.r2 {
+    min-height: 300px;
+}
+
+.area-chart {
+    flex: 1.5 1 400px;
+}
+
+.bar-chart {
+    flex: 1 1 300px;
+}
+
+.r3 {
+    min-height: 320px;
+}
+
+.activities {
+    flex: 1.2 1 300px;
+}
+
+.calendar {
+    flex: 1 1 300px;
+}
+
+.timeline {
+    flex: 2 1 400px;
+}
+
+/* Utils used in template */
+.block {
+    display: block;
+}
+
+.mt-5 {
+    margin-top: 8px;
+}
+
+.mb-10 {
+    margin-bottom: 24px;
+}
+
+.mt-10 {
+    margin-top: 24px;
+}
+
+.mb-5 {
+    margin-bottom: 12px;
+}
+
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.border-card {
+    border: 1px solid rgba(255, 100, 200, 0.1);
+}

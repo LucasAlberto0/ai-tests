@@ -1,0 +1,22 @@
+.stat-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.mb-5 {
+    margin-bottom: 12px;
+}
+
+.lorem-text {
+    line-height: 1.4;
+}

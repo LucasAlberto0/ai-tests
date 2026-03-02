@@ -1,0 +1,25 @@
+<aside class="sidebar">
+    <div class="logo">
+        <app-icon name="dashboard" size="24px" color="var(--accent-cyan)"></app-icon>
+        <app-typography variant="h1" color="var(--text-primary)">Dashboard</app-typography>
+    </div>
+
+    <nav class="nav-menu">
+        <div class="nav-section">
+            <app-nav-item icon="dashboard" label="DASHBOARD" [active]="true" [hasDropdown]="true"></app-nav-item>
+            <app-nav-item icon="chart" label="CHART" [hasDropdown]="true"></app-nav-item>
+            <app-nav-item icon="apps" label="APPS" [hasDropdown]="true"></app-nav-item>
+            <app-nav-item icon="forum" label="FORUM" [hasDropdown]="true"></app-nav-item>
+            <app-nav-item icon="email" label="EMAIL" [hasDropdown]="true"></app-nav-item>
+            <app-nav-item icon="settings" label="SETTING" [hasDropdown]="true"></app-nav-item>
+        </div>
+
+        <div class="nav-section projects-section">
+            <app-typography variant="caption" color="var(--text-primary)"
+                class="section-title">PROJECTS</app-typography>
+            <app-nav-item label="OPTION" class="no-icon"></app-nav-item>
+            <app-nav-item label="CASE" class="no-icon"></app-nav-item>
+            <app-nav-item label="LOCAL" class="no-icon"></app-nav-item>
+        </div>
+    </nav>
+</aside>

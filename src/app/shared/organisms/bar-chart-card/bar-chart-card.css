@@ -1,0 +1,51 @@
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 32px;
+    height: 100%;
+}
+
+.content-row {
+    display: flex;
+    gap: 32px;
+    height: 100%;
+    align-items: center;
+}
+
+.bars {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bar-row {
+    display: flex;
+    gap: 4px;
+    height: 16px;
+}
+
+.bar-segment {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.bar-segment.empty {
+    background-color: rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(90deg, transparent 50%, rgba(0, 0, 0, 0.2) 50%);
+    background-size: 8px 100%;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.mb-5 {
+    margin-bottom: -5px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+    display: block;
+    line-height: 1.5;
+}

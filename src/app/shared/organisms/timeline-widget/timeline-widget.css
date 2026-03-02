@@ -1,0 +1,53 @@
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 32px;
+    height: 100%;
+}
+
+.timeline-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 75%;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.timeline-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--text-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 4px var(--card-bg);
+}
+
+.data-text {
+    margin-top: 16px;
+}

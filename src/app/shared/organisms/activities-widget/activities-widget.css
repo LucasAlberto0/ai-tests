@@ -1,0 +1,19 @@
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+}
+
+.mb-5 {
+    margin-bottom: 12px;
+}
+
+.mt-5 {
+    margin-top: 16px;
+}
+
+.block {
+    display: block;
+    line-height: 1.5;
+}
